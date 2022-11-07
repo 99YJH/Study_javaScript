@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>시계 만들기</title>
+    <script>
+        const time = function(){
+            const date = new Date();
+            const hh = date.getHours();
+            const mm = date.getMinutes();
+            const ss = date.getSeconds();
+            console.log(`${hh} : ${mm} : ${ss}`);
+        }
+        
+        let si = setInterval(time, 1000);        
+
+        const resetInterval = function(){
+            si = setInterval(time, 1000);
+        }
+        const clearInter = function(){
+            clearInterval(si);
+            console.log('time 중지!')
+        }
+        
+
+
+    </script>
+</head>
+<body>
+    <h2>시계 만들기</h2>
+    <p>
+    <button onclick="clearInter()">
+        중지
+    </button>
+    <button onclick="resetInterval()">
+        시작
+    </button>
+</p>
+</body>
+</html>
