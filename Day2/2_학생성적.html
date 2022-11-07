@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>학생성적</title>
+    <script>
+        const name = prompt('이름');
+        const kor = prompt('국어');
+        const math = prompt('수학');
+        const eng = prompt('영어');
+        var chdwja = parseInt(kor)+parseInt(math)+parseInt(eng);
+        var vudrbs = chdwja/3;
+        console.log(`${name}님의 성적표`)
+        console.log(`국어점수: ${kor}점`)
+        console.log(`수학점수: ${math}점`)
+        console.log(`영어점수: ${eng}점`)
+        console.log(`총점: ${chdwja}점`)
+        console.log(`평균: ${vudrbs}점`)
+    </script>
+</head>
+<body>
+    <h2>학생성적</h2>
+</body>
+</html>
